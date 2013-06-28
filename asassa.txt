@@ -7,3 +7,5 @@ sasas
 
 asasas
 assas
+
+etkin test
