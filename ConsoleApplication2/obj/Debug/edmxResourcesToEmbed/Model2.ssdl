@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CoreEventEggDbModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CoreEventEggDbModel1StoreContainer">
+    <EntitySet Name="ArticleContents" EntityType="CoreEventEggDbModel1.Store.ArticleContents" store:Type="Tables" Schema="Asset" />
+    <EntitySet Name="Articles" EntityType="CoreEventEggDbModel1.Store.Articles" store:Type="Tables" Schema="Asset" />
+    <EntitySet Name="AssetTypes" EntityType="CoreEventEggDbModel1.Store.AssetTypes" store:Type="Tables" Schema="Asset" />
+    <EntitySet Name="Gallery" EntityType="CoreEventEggDbModel1.Store.Gallery" store:Type="Tables" Schema="Asset" />
+    <EntitySet Name="ImageGallery" EntityType="CoreEventEggDbModel1.Store.ImageGallery" store:Type="Tables" Schema="Asset" />
+    <EntitySet Name="Images" EntityType="CoreEventEggDbModel1.Store.Images" store:Type="Tables" Schema="Asset" />
+    <EntitySet Name="TableName" EntityType="CoreEventEggDbModel1.Store.TableName" store:Type="Tables" Schema="Asset" />
+    <EntitySet Name="Templates" EntityType="CoreEventEggDbModel1.Store.Templates" store:Type="Tables" Schema="Asset" />
+    <EntitySet Name="Videos" EntityType="CoreEventEggDbModel1.Store.Videos" store:Type="Tables" Schema="Asset" />
+    <EntitySet Name="sysdiagrams" EntityType="CoreEventEggDbModel1.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Associations" EntityType="CoreEventEggDbModel1.Store.Associations" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="AssocitationCategories" EntityType="CoreEventEggDbModel1.Store.AssocitationCategories" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="Categories" EntityType="CoreEventEggDbModel1.Store.Categories" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="Cities" EntityType="CoreEventEggDbModel1.Store.Cities" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="Countries" EntityType="CoreEventEggDbModel1.Store.Countries" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="EventAssociations" EntityType="CoreEventEggDbModel1.Store.EventAssociations" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="EventCategories" EntityType="CoreEventEggDbModel1.Store.EventCategories" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="Events" EntityType="CoreEventEggDbModel1.Store.Events" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="Organizers" EntityType="CoreEventEggDbModel1.Store.Organizers" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="Venues" EntityType="CoreEventEggDbModel1.Store.Venues" store:Type="Tables" Schema="Event" />
+    <EntitySet Name="EventAssets" EntityType="CoreEventEggDbModel1.Store.EventAssets" store:Type="Tables" Schema="EventEgg" />
+    <EntitySet Name="Events1" EntityType="CoreEventEggDbModel1.Store.Events1" store:Type="Tables" Schema="EventEgg" Table="Events" />
+    <EntitySet Name="Applications" EntityType="CoreEventEggDbModel1.Store.Applications" store:Type="Tables" Schema="User" />
+    <EntitySet Name="Permissions" EntityType="CoreEventEggDbModel1.Store.Permissions" store:Type="Tables" Schema="User" />
+    <EntitySet Name="PersonRoles" EntityType="CoreEventEggDbModel1.Store.PersonRoles" store:Type="Tables" Schema="User" />
+    <EntitySet Name="Persons" EntityType="CoreEventEggDbModel1.Store.Persons" store:Type="Tables" Schema="User" />
+    <EntitySet Name="ProcessPermissions" EntityType="CoreEventEggDbModel1.Store.ProcessPermissions" store:Type="Tables" Schema="User" />
+    <EntitySet Name="Roles" EntityType="CoreEventEggDbModel1.Store.Roles" store:Type="Tables" Schema="User" />
+    <EntitySet Name="Assets" EntityType="CoreEventEggDbModel1.Store.Assets" store:Type="Tables" Schema="Workflow" />
+    <EntitySet Name="Events2" EntityType="CoreEventEggDbModel1.Store.Events2" store:Type="Tables" Schema="Workflow" Table="Events" />
+    <EntitySet Name="RoleStatus" EntityType="CoreEventEggDbModel1.Store.RoleStatus" store:Type="Tables" Schema="Workflow" />
+    <EntitySet Name="Status" EntityType="CoreEventEggDbModel1.Store.Status" store:Type="Tables" Schema="Workflow" />
+    <AssociationSet Name="FK_Assets_ArticleContents_Assets_Articles" Association="CoreEventEggDbModel1.Store.FK_Assets_ArticleContents_Assets_Articles">
+      <End Role="Articles" EntitySet="Articles" />
+      <End Role="ArticleContents" EntitySet="ArticleContents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Assets_Articles_Assets_ArticleTypes" Association="CoreEventEggDbModel1.Store.FK_Assets_Articles_Assets_ArticleTypes">
+      <End Role="TableName" EntitySet="TableName" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Assets_ImageGallery_Assets_Gallery" Association="CoreEventEggDbModel1.Store.FK_Assets_ImageGallery_Assets_Gallery">
+      <End Role="Gallery" EntitySet="Gallery" />
+      <End Role="ImageGallery" EntitySet="ImageGallery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Assets_ImageGallery_Assets_Images" Association="CoreEventEggDbModel1.Store.FK_Assets_ImageGallery_Assets_Images">
+      <End Role="Images" EntitySet="Images" />
+      <End Role="ImageGallery" EntitySet="ImageGallery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Associations_Events_Cities" Association="CoreEventEggDbModel1.Store.FK_Events_Associations_Events_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Associations" EntitySet="Associations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Associations_Events_Countries" Association="CoreEventEggDbModel1.Store.FK_Events_Associations_Events_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Associations" EntitySet="Associations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_AssocitationCategories_Events_Associations" Association="CoreEventEggDbModel1.Store.FK_Events_AssocitationCategories_Events_Associations">
+      <End Role="Associations" EntitySet="Associations" />
+      <End Role="AssocitationCategories" EntitySet="AssocitationCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_AssocitationCategories_Events_Categories" Association="CoreEventEggDbModel1.Store.FK_Events_AssocitationCategories_Events_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="AssocitationCategories" EntitySet="AssocitationCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Cities_Events_Countries" Association="CoreEventEggDbModel1.Store.FK_Events_Cities_Events_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventAssociations_Events_Associations1" Association="CoreEventEggDbModel1.Store.FK_Events_EventAssociations_Events_Associations1">
+      <End Role="Associations" EntitySet="Associations" />
+      <End Role="EventAssociations" EntitySet="EventAssociations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventAssociations_Events_Events" Association="CoreEventEggDbModel1.Store.FK_Events_EventAssociations_Events_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventAssociations" EntitySet="EventAssociations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventCategories_Events_Categories" Association="CoreEventEggDbModel1.Store.FK_Events_EventCategories_Events_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="EventCategories" EntitySet="EventCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_EventCategories_Events_Events" Association="CoreEventEggDbModel1.Store.FK_Events_EventCategories_Events_Events">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="EventCategories" EntitySet="EventCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Events_Events_Associations" Association="CoreEventEggDbModel1.Store.FK_Events_Events_Events_Associations">
+      <End Role="Associations" EntitySet="Associations" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Events_Events_Cities" Association="CoreEventEggDbModel1.Store.FK_Events_Events_Events_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Events_Events_Countries" Association="CoreEventEggDbModel1.Store.FK_Events_Events_Events_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Events_Events_Organizers" Association="CoreEventEggDbModel1.Store.FK_Events_Events_Events_Organizers">
+      <End Role="Organizers" EntitySet="Organizers" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Events_Events_Venues" Association="CoreEventEggDbModel1.Store.FK_Events_Events_Events_Venues">
+      <End Role="Venues" EntitySet="Venues" />
+      <End Role="Events" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Organizers_Events_Cities" Association="CoreEventEggDbModel1.Store.FK_Events_Organizers_Events_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Organizers" EntitySet="Organizers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Organizers_Events_Countries" Association="CoreEventEggDbModel1.Store.FK_Events_Organizers_Events_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Organizers" EntitySet="Organizers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Events_Venues_Events_Countries" Association="CoreEventEggDbModel1.Store.FK_Events_Venues_Events_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Venues" EntitySet="Venues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Permissions_Users_Roles" Association="CoreEventEggDbModel1.Store.FK_Users_Permissions_Users_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Permissions" EntitySet="Permissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_PersonDetails_Events_Cities" Association="CoreEventEggDbModel1.Store.FK_Users_PersonDetails_Events_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Persons" EntitySet="Persons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_PersonDetails_Events_Countries" Association="CoreEventEggDbModel1.Store.FK_Users_PersonDetails_Events_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Persons" EntitySet="Persons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Process_Users_Applications" Association="CoreEventEggDbModel1.Store.FK_Users_Process_Users_Applications">
+      <End Role="Applications" EntitySet="Applications" />
+      <End Role="ProcessPermissions" EntitySet="ProcessPermissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_UserRoles_Users_PersonDetails" Association="CoreEventEggDbModel1.Store.FK_Users_UserRoles_Users_PersonDetails">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="PersonRoles" EntitySet="PersonRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_UserRoles_Users_Roles" Association="CoreEventEggDbModel1.Store.FK_Users_UserRoles_Users_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="PersonRoles" EntitySet="PersonRoles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ArticleContents">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ArticleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ContentText" Type="text" Nullable="false" />
+    <Property Name="HtmlType" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="DisplayOrder" Type="tinyint" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Articles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Title" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="MainKeywords" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="OtherKeywords" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="TableNameId" Type="int" Nullable="false" />
+    <Property Name="TableNameRowId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="Score" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AssetTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Gallery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TableNameId" Type="int" Nullable="false" />
+    <Property Name="TableNameRowId" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ImageGallery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GalleryId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ImageId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DisplayOrder" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Images">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Path" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="TableNameId" Type="int" Nullable="false" />
+    <Property Name="TableNameRowId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="Provider" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TableName">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Templates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="ScreenShot" Type="varchar" MaxLength="250" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="Path" Type="varchar" MaxLength="250" />
+    <Property Name="Provider" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Videos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Path" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TableNameId" Type="int" Nullable="false" />
+    <Property Name="TableNameRowId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="Provider" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Associations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ShortName" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Url" Type="varchar" MaxLength="250" />
+    <Property Name="CountryId" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+    <Property Name="Logo" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="AssocitationCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AssociationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CategoryId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ParentId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CountryId" Type="int" Nullable="false" />
+    <Property Name="Coordinates" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventAssociations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EventId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AssociationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EventId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CategoryId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AssociationId" Type="uniqueidentifier" />
+    <Property Name="OrganizerId" Type="uniqueidentifier" />
+    <Property Name="VenueId" Type="uniqueidentifier" />
+    <Property Name="CountryId" Type="int" />
+    <Property Name="CityId" Type="int" />
+    <Property Name="ShortName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="StartDate" Type="date" />
+    <Property Name="EndDate" Type="date" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="AttendeeNumber" Type="int" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="Url" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Organizers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Url" Type="varchar" MaxLength="250" />
+    <Property Name="CountryId" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Venues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="ShortName" Type="varchar" MaxLength="50" />
+    <Property Name="CountryId" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="500" />
+    <Property Name="Coordinates" Type="varchar" MaxLength="100" />
+    <Property Name="Url" Type="varchar" MaxLength="250" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EventAssets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EventId" Type="uniqueidentifier" />
+    <Property Name="AssetTypeId" Type="int" />
+    <Property Name="TypeId" Type="int" />
+    <Property Name="SourceId" Type="int" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="Events1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EventId" Type="int" />
+    <Property Name="PackagePath" Type="varchar" MaxLength="250" />
+    <Property Name="ServerId" Type="int" />
+    <Property Name="TemplateId" Type="int" />
+  </EntityType>
+  <EntityType Name="Applications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Permissions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" />
+    <Property Name="ProcessId" Type="uniqueidentifier" />
+    <Property Name="CrudProcessType" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="PersonRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Persons">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Gender" Type="tinyint" Nullable="false" />
+    <Property Name="CountryId" Type="int" />
+    <Property Name="CityId" Type="int" />
+    <Property Name="Address" Type="varchar" MaxLength="250" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Mobile" Type="varchar" MaxLength="20" />
+    <Property Name="Title" Type="varchar" MaxLength="100" />
+    <Property Name="BioDescription" Type="text" />
+    <Property Name="Type" Type="tinyint" />
+    <Property Name="PersonalWebUrl" Type="varchar" MaxLength="250" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifieldDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProcessPermissions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProcessType" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Url" Type="varchar" MaxLength="250" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Assets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="From" Type="nchar" MaxLength="10" />
+    <Property Name="To" Type="nchar" MaxLength="10" />
+    <Property Name="FromRole" Type="nchar" MaxLength="10" />
+    <Property Name="ToRole" Type="nchar" MaxLength="10" />
+    <Property Name="Type" Type="nchar" MaxLength="10" />
+    <Property Name="RowId" Type="nchar" MaxLength="10" />
+    <Property Name="DateTime" Type="nchar" MaxLength="10" />
+    <Property Name="Status" Type="nchar" MaxLength="10" />
+    <Property Name="Comment" Type="nchar" MaxLength="10" />
+    <Property Name="ReponseTime" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Events2">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="From" Type="nchar" MaxLength="10" />
+    <Property Name="To" Type="nchar" MaxLength="10" />
+    <Property Name="FromRole" Type="nchar" MaxLength="10" />
+    <Property Name="ToRole" Type="nchar" MaxLength="10" />
+    <Property Name="Type" Type="nchar" MaxLength="10" />
+    <Property Name="RowId" Type="nchar" MaxLength="10" />
+    <Property Name="DateTime" Type="nchar" MaxLength="10" />
+    <Property Name="Status" Type="nchar" MaxLength="10" />
+    <Property Name="Comment" Type="nchar" MaxLength="10" />
+    <Property Name="ReponseTime" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RoleStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Assets_ArticleContents_Assets_Articles">
+    <End Role="Articles" Type="CoreEventEggDbModel1.Store.Articles" Multiplicity="1" />
+    <End Role="ArticleContents" Type="CoreEventEggDbModel1.Store.ArticleContents" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ArticleContents">
+        <PropertyRef Name="ArticleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Assets_Articles_Assets_ArticleTypes">
+    <End Role="TableName" Type="CoreEventEggDbModel1.Store.TableName" Multiplicity="1" />
+    <End Role="Articles" Type="CoreEventEggDbModel1.Store.Articles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TableName">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="TableNameId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Assets_ImageGallery_Assets_Gallery">
+    <End Role="Gallery" Type="CoreEventEggDbModel1.Store.Gallery" Multiplicity="1" />
+    <End Role="ImageGallery" Type="CoreEventEggDbModel1.Store.ImageGallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gallery">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ImageGallery">
+        <PropertyRef Name="GalleryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Assets_ImageGallery_Assets_Images">
+    <End Role="Images" Type="CoreEventEggDbModel1.Store.Images" Multiplicity="1" />
+    <End Role="ImageGallery" Type="CoreEventEggDbModel1.Store.ImageGallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Images">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ImageGallery">
+        <PropertyRef Name="ImageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Associations_Events_Cities">
+    <End Role="Cities" Type="CoreEventEggDbModel1.Store.Cities" Multiplicity="1" />
+    <End Role="Associations" Type="CoreEventEggDbModel1.Store.Associations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Associations">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Associations_Events_Countries">
+    <End Role="Countries" Type="CoreEventEggDbModel1.Store.Countries" Multiplicity="1" />
+    <End Role="Associations" Type="CoreEventEggDbModel1.Store.Associations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Associations">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_AssocitationCategories_Events_Associations">
+    <End Role="Associations" Type="CoreEventEggDbModel1.Store.Associations" Multiplicity="1" />
+    <End Role="AssocitationCategories" Type="CoreEventEggDbModel1.Store.AssocitationCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Associations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssocitationCategories">
+        <PropertyRef Name="AssociationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_AssocitationCategories_Events_Categories">
+    <End Role="Categories" Type="CoreEventEggDbModel1.Store.Categories" Multiplicity="1" />
+    <End Role="AssocitationCategories" Type="CoreEventEggDbModel1.Store.AssocitationCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssocitationCategories">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Cities_Events_Countries">
+    <End Role="Countries" Type="CoreEventEggDbModel1.Store.Countries" Multiplicity="1" />
+    <End Role="Cities" Type="CoreEventEggDbModel1.Store.Cities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventAssociations_Events_Associations1">
+    <End Role="Associations" Type="CoreEventEggDbModel1.Store.Associations" Multiplicity="1" />
+    <End Role="EventAssociations" Type="CoreEventEggDbModel1.Store.EventAssociations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Associations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAssociations">
+        <PropertyRef Name="AssociationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventAssociations_Events_Events">
+    <End Role="Events" Type="CoreEventEggDbModel1.Store.Events" Multiplicity="1" />
+    <End Role="EventAssociations" Type="CoreEventEggDbModel1.Store.EventAssociations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventAssociations">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventCategories_Events_Categories">
+    <End Role="Categories" Type="CoreEventEggDbModel1.Store.Categories" Multiplicity="1" />
+    <End Role="EventCategories" Type="CoreEventEggDbModel1.Store.EventCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCategories">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_EventCategories_Events_Events">
+    <End Role="Events" Type="CoreEventEggDbModel1.Store.Events" Multiplicity="1" />
+    <End Role="EventCategories" Type="CoreEventEggDbModel1.Store.EventCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EventCategories">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Events_Events_Associations">
+    <End Role="Associations" Type="CoreEventEggDbModel1.Store.Associations" Multiplicity="0..1" />
+    <End Role="Events" Type="CoreEventEggDbModel1.Store.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Associations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="AssociationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Events_Events_Cities">
+    <End Role="Cities" Type="CoreEventEggDbModel1.Store.Cities" Multiplicity="0..1" />
+    <End Role="Events" Type="CoreEventEggDbModel1.Store.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Events_Events_Countries">
+    <End Role="Countries" Type="CoreEventEggDbModel1.Store.Countries" Multiplicity="0..1" />
+    <End Role="Events" Type="CoreEventEggDbModel1.Store.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Events_Events_Organizers">
+    <End Role="Organizers" Type="CoreEventEggDbModel1.Store.Organizers" Multiplicity="0..1" />
+    <End Role="Events" Type="CoreEventEggDbModel1.Store.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organizers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="OrganizerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Events_Events_Venues">
+    <End Role="Venues" Type="CoreEventEggDbModel1.Store.Venues" Multiplicity="0..1" />
+    <End Role="Events" Type="CoreEventEggDbModel1.Store.Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Events">
+        <PropertyRef Name="VenueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Organizers_Events_Cities">
+    <End Role="Cities" Type="CoreEventEggDbModel1.Store.Cities" Multiplicity="1" />
+    <End Role="Organizers" Type="CoreEventEggDbModel1.Store.Organizers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organizers">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Organizers_Events_Countries">
+    <End Role="Countries" Type="CoreEventEggDbModel1.Store.Countries" Multiplicity="1" />
+    <End Role="Organizers" Type="CoreEventEggDbModel1.Store.Organizers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organizers">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Events_Venues_Events_Countries">
+    <End Role="Countries" Type="CoreEventEggDbModel1.Store.Countries" Multiplicity="1" />
+    <End Role="Venues" Type="CoreEventEggDbModel1.Store.Venues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Venues">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Permissions_Users_Roles">
+    <End Role="Roles" Type="CoreEventEggDbModel1.Store.Roles" Multiplicity="0..1" />
+    <End Role="Permissions" Type="CoreEventEggDbModel1.Store.Permissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Permissions">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_PersonDetails_Events_Cities">
+    <End Role="Cities" Type="CoreEventEggDbModel1.Store.Cities" Multiplicity="0..1" />
+    <End Role="Persons" Type="CoreEventEggDbModel1.Store.Persons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Persons">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_PersonDetails_Events_Countries">
+    <End Role="Countries" Type="CoreEventEggDbModel1.Store.Countries" Multiplicity="0..1" />
+    <End Role="Persons" Type="CoreEventEggDbModel1.Store.Persons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Persons">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Process_Users_Applications">
+    <End Role="Applications" Type="CoreEventEggDbModel1.Store.Applications" Multiplicity="1" />
+    <End Role="ProcessPermissions" Type="CoreEventEggDbModel1.Store.ProcessPermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProcessPermissions">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_UserRoles_Users_PersonDetails">
+    <End Role="Persons" Type="CoreEventEggDbModel1.Store.Persons" Multiplicity="1" />
+    <End Role="PersonRoles" Type="CoreEventEggDbModel1.Store.PersonRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PersonRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_UserRoles_Users_Roles">
+    <End Role="Roles" Type="CoreEventEggDbModel1.Store.Roles" Multiplicity="1" />
+    <End Role="PersonRoles" Type="CoreEventEggDbModel1.Store.PersonRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PersonRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

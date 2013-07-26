@@ -1,0 +1,8 @@
+<Modules>
+  <Module PersistentId="A0218734-467F-4BAC-B74B-811D155778A1" ModuleId="EventEgg.Domain" />
+  <Module PersistentId="45FB5A52-AAA0-45DC-9C25-73144BDB7161" ModuleId="ConsoleApplication1" />
+  <Module PersistentId="E054E8F8-A541-4501-87C2-F2DC51BCFDCD" ModuleId="EventEgg.Service" />
+  <Module PersistentId="5E4E8397-458F-4539-AA69-51340B454D2C" ModuleId="EventEgg.Data" />
+  <Module PersistentId="72A5A074-8261-4047-80A2-354BF64C6A0D" ModuleId="EventEgg.Admin" />
+  <Module PersistentId="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0" ModuleId="EventEgg.Admin_1" />
+</Modules>

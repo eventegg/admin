@@ -1,0 +1,60 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="A0218734-467F-4BAC-B74B-811D155778A1/d:Event/f:Country.cs" caret="162" fromTop="7" />
+    <File id="A0218734-467F-4BAC-B74B-811D155778A1/d:Event/f:City.cs" caret="568" fromTop="16" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/d:Models/f:CountryViewModel.cs" caret="302" fromTop="10" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/f:ServiceBase.cs" caret="116" fromTop="3" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/f:CountryService.cs" caret="2101" fromTop="19" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Home/f:Index.cshtml" caret="102" fromTop="6" />
+    <File id="5E4E8397-458F-4539-AA69-51340B454D2C/f:IRepository.cs" caret="355" fromTop="14" />
+    <File id="5E4E8397-458F-4539-AA69-51340B454D2C/f:RepositoryBase.cs" caret="3840" fromTop="64" />
+    <File id="45FB5A52-AAA0-45DC-9C25-73144BDB7161/f:Program.cs" caret="556" fromTop="14" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/d:Interfaces/f:IServiceBase.cs" caret="456" fromTop="9" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Content/d:assets/d:scripts/f:app.js" caret="276" fromTop="12" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Personal/f:LostPassword.cshtml" caret="323" fromTop="12" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Content/d:assets/d:css/d:pages/f:login.css" caret="1053" fromTop="31" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Shared/f:_Layout.cshtml" caret="281" fromTop="11" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Personal/f:Register.cshtml" caret="2238" fromTop="22" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Controllers/f:PersonalController.cs" caret="643" fromTop="25" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Models/f:PersonalPageModel.cs" caret="279" fromTop="10" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Content/d:assets/d:css/f:style-responsive.css" caret="0" fromTop="0" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Content/d:assets/d:css/d:pages/f:about-us.css" caret="0" fromTop="0" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:App_Start/f:BundleConfig.cs" caret="3442" fromTop="44" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Shared/f:_LayoutPersonal.cshtml" caret="3507" fromTop="36" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Content/d:assets/d:scripts/f:login.js" caret="708" fromTop="21" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Personal/f:Login.cshtml" caret="322" fromTop="11" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="A0218734-467F-4BAC-B74B-811D155778A1/d:Asset/f:ImageGallery.cs" caret="717" fromTop="26" />
+    <File id="45FB5A52-AAA0-45DC-9C25-73144BDB7161/f:App.config" caret="1017" fromTop="3" />
+    <File id="A0218734-467F-4BAC-B74B-811D155778A1/d:Asset/f:TableName.cs" caret="15" fromTop="1" />
+    <File id="5E4E8397-458F-4539-AA69-51340B454D2C/d:Repositories/f:PersonalRepository.cs" caret="0" fromTop="0" />
+    <File id="5E4E8397-458F-4539-AA69-51340B454D2C/d:Interfaces/f:IArticleRepository.cs" caret="130" fromTop="4" />
+    <File id="5E4E8397-458F-4539-AA69-51340B454D2C/d:Repositories/f:ArticleRepository.cs" caret="307" fromTop="10" />
+    <File id="A0218734-467F-4BAC-B74B-811D155778A1/d:Asset/f:ArticleContent.cs" caret="1179" fromTop="35" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/d:Models/f:ArticleViewModel.cs" caret="626" fromTop="16" />
+    <File id="A0218734-467F-4BAC-B74B-811D155778A1/d:Asset/f:Image.cs" caret="456" fromTop="13" />
+    <File id="A0218734-467F-4BAC-B74B-811D155778A1/d:Asset/f:Article.cs" caret="880" fromTop="28" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/d:Infrastructure/f:ExpressionMapping.cs" caret="45" fromTop="1" />
+    <File id="A0218734-467F-4BAC-B74B-811D155778A1/d:Event/f:Country.cs" caret="987" fromTop="37" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/d:Models/f:CountryViewModel.cs" caret="532" fromTop="17" />
+    <File id="5E4E8397-458F-4539-AA69-51340B454D2C/f:IRepository.cs" caret="355" fromTop="14" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/d:Interfaces/f:IServiceBase.cs" caret="456" fromTop="9" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/f:ServiceBase.cs" caret="116" fromTop="3" />
+    <File id="E054E8F8-A541-4501-87C2-F2DC51BCFDCD/f:CountryService.cs" caret="2115" fromTop="19" />
+    <File id="45FB5A52-AAA0-45DC-9C25-73144BDB7161/f:Program.cs" caret="600" fromTop="15" />
+    <File id="5E4E8397-458F-4539-AA69-51340B454D2C/f:RepositoryBase.cs" caret="3840" fromTop="36" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Controllers/f:HomeController.cs" caret="331" fromTop="16" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Personal/f:LostPassword.cshtml" caret="1224" fromTop="34" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Content/d:assets/d:css/d:pages/f:login.css" caret="1053" fromTop="31" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Shared/f:_Layout.cshtml" caret="281" fromTop="11" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Personal/f:Register.cshtml" caret="2545" fromTop="30" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Controllers/f:PersonalController.cs" caret="643" fromTop="25" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Models/f:PersonalPageModel.cs" caret="279" fromTop="10" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Shared/f:_LayoutPersonal.cshtml" caret="1615" fromTop="18" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:App_Start/f:BundleConfig.cs" caret="3442" fromTop="44" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Content/d:assets/d:scripts/f:login.js" caret="1249" fromTop="30" />
+    <File id="8AEB61D0-8A84-4E81-A82E-3C40FBDE16F0/d:Views/d:Personal/f:Login.cshtml" caret="621" fromTop="17" />
+  </RecentEdits>
+</RecentFiles>

@@ -1,0 +1,11 @@
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\bin\Debug\EventEgg.Data.dll
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\bin\Debug\EventEgg.Data.pdb
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\bin\Debug\EventEgg.Domain.dll
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\bin\Debug\FluentNHibernate.dll
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\bin\Debug\Iesi.Collections.dll
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\bin\Debug\NHibernate.dll
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\bin\Debug\nunit.framework.dll
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\bin\Debug\EventEgg.Domain.pdb
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\obj\Debug\EventEgg.Data.csprojResolveAssemblyReference.cache
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\obj\Debug\EventEgg.Data.dll
+C:\vhosts\EventEgg\EventEgg.DataAccessLayer\obj\Debug\EventEgg.Data.pdb
