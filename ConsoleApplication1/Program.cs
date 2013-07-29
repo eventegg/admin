@@ -11,6 +11,9 @@ namespace ConsoleApplication1
         {
             var countryService = new CountryService();
 
+
+            // Önmer Açıklama yazı
+
             //var country = new CountryViewModel
             //    {
             //        Name = "Argantine",
