@@ -123,3 +123,5 @@ C:\vhosts\EventEgg\EventEgg.Admin\bin\NHibernate.xml
 C:\vhosts\EventEgg\EventEgg.Admin\bin\FluentNHibernate.xml
 C:\vhosts\EventEgg\EventEgg.Admin\bin\nunit.framework.xml
 C:\vhosts\EventEgg\EventEgg.Admin\bin\Iesi.Collections.xml
+C:\EventEggProject\admin\EventEgg.Admin\obj\Debug\EventEgg.Admin.csprojResolveAssemblyReference.cache
+C:\EventEggProject\admin\EventEgg.Admin\obj\Debug\EventEgg.Admin.dll
