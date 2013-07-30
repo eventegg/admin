@@ -94,7 +94,7 @@ namespace EventEgg.Admin.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return true;
+                return View(model);
             }
             return View(model);
         }
