@@ -15,6 +15,7 @@ namespace EventEgg.Admin.Controllers
         {
             Response.Write("ömer başoğlu");
             Console.WriteLine("vfgfgf");
+            Console.WriteLine("ömer");
             return View();
         }
     }
