@@ -23,6 +23,10 @@ namespace EventEgg.Admin.Controllers
             
             // ömer : merge
 
+
+
+            //Ömer 2 : merge
+
             return View();
         }
     }
