@@ -20,6 +20,8 @@ namespace EventEgg.Admin.Controllers
             // guncelleme yaptim
 
             // ömer : güncelleme yaptım
+            
+            // ömer : merge
 
             return View();
         }
