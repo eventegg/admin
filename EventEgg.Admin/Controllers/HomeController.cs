@@ -13,7 +13,7 @@ namespace EventEgg.Admin.Controllers
         [Authorize(Roles = "SystemAdmin")]
         public ActionResult Index()
         {
-            Response.Write("asdasd");
+            Response.Write("ömer başoğlu");
             return View();
         }
     }
