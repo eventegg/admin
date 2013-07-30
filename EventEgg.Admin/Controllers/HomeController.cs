@@ -16,6 +16,7 @@ namespace EventEgg.Admin.Controllers
             //response.write("asas");
 
             Response.Write("ERT:test");
+            Response.Write("Omr:test");
             return View();
         }
     }
