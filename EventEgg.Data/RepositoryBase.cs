@@ -8,7 +8,7 @@ using NHibernate.Linq;
 
 namespace EventEgg.Data
 {
-    public abstract class RepositoryBase<T> : IRepository<T>,IDisposable
+    public abstract class RepositoryBase<T> : IRepository<T>, IDisposable
         where T : class
     {
 
@@ -128,6 +128,17 @@ namespace EventEgg.Data
                 using (_session)
                 {
                     return _session.Query<T>();
+                }
+            }
+        }
+
+        public IQueryable<T> Query(Expression<Func<T, bool>> query)
+        {
+            using (_sessionFactory)
+            {
+                using (_session)
+                {
+                    return _session.Query<T>().Where(query);
                 }
             }
         }

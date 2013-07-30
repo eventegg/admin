@@ -69,7 +69,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Event\City.cs" />
     <Compile Include="Personal\PersonDetail.cs" />
-    <Compile Include="Personal\Roles.cs" />
+    <Compile Include="Personal\Role.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

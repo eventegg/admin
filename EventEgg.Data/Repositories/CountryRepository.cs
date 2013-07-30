@@ -1,5 +1,4 @@
 ﻿using EventEgg.Data.Interfaces;
-using EventEgg.Domain;
 using EventEgg.Domain.Event;
 
 namespace EventEgg.Data.Repositories

@@ -76,11 +76,13 @@
     <Compile Include="Interfaces\IArticleRepository.cs" />
     <Compile Include="Interfaces\ICountryRepository.cs" />
     <Compile Include="Interfaces\IPersonalRepository.cs" />
+    <Compile Include="Interfaces\IRoleRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ArticleRepository.cs" />
     <Compile Include="Repositories\CountryRepository.cs" />
     <Compile Include="Repositories\PersonalRepository.cs" />
+    <Compile Include="Repositories\RoleRepository.cs" />
     <Compile Include="RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>

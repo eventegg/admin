@@ -32,7 +32,7 @@ namespace EventEgg.Domain.Personal
 
         public virtual Country Country { get; set; }
         public virtual City City { get; set; }
-        public virtual Roles Role { get; set; }
+        public virtual Role Role { get; set; }
     }
 
     [Serializable]

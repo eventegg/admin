@@ -2,10 +2,11 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using EventEgg.Service.Infrastructure;
+using EventEgg.Service.Interfaces;
 
 namespace EventEgg.Service.Models
 {
-    public class PersonalViewModel
+    public class PersonalViewModel : IViewModel
     {
 
         /*

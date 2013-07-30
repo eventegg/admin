@@ -1,8 +1,9 @@
 using System;
+using EventEgg.Service.Interfaces;
 
 namespace EventEgg.Service.Models
 {
-    public class ArticleContentViewModel
+    public class ArticleContentViewModel : IViewModel
     {
         public Guid Id { get; set; }
         public Guid ArticleId { get; set; }

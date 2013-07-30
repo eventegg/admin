@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace EventEgg.Domain.Personal
 {
-    public class Roles
+    public class Role
     {
         public virtual int Id { get; set; }
         public virtual string Name { get; set; }
@@ -13,14 +13,14 @@ namespace EventEgg.Domain.Personal
 
         public virtual IList<PersonalDetail> PersonalDetails { get; set; }
 
-        public Roles()
+        public Role()
         {
             PersonalDetails = new List<PersonalDetail>();
         }
 
     }
 
-    public class RolesMap : ClassMap<Roles>
+    public class RolesMap : ClassMap<Role>
     {
         public RolesMap()
         {

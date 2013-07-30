@@ -189,15 +189,6 @@
                                 </div>
                             </div>
                             <!--/span-->
-                            <div class="span4 ">
-                                <div class="control-group">
-                                    <label class="control-label">Posta Kodu</label>
-                                    <div class="controls">
-                                        <input type="text" class="m-wrap span12">
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/span-->
                         </div>
                         <!--/row-->
 
@@ -206,7 +197,7 @@
                             <div class="span12 ">
                                 <div class="control-group">
                                     <div class="controls">
-                                        <textarea class="span12 wysihtml5 m-wrap" rows="6"></textarea>
+                                        @Html.TextAreaFor(m=>m.PersonalViewModel.BioDescription,new{@class="span12 wysihtml5 m-wrap", rows="6"})
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +210,6 @@
                         </div>
                     }
                     <!-- END FORM-->
-
                 </div>
 
             </div>

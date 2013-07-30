@@ -14,8 +14,7 @@ namespace EventEgg.Data
 
         T SingleBy(Expression<Func<T, bool>> query);
         IQueryable<T> Query();
-        long Count(Expression<Func<T,bool>> query); 
-        
-
+        IQueryable<T> Query(Expression<Func<T, bool>> query);
+        long Count(Expression<Func<T, bool>> query);
     }
 }

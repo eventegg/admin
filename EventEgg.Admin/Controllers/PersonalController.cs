@@ -15,8 +15,6 @@ namespace EventEgg.Admin.Controllers
         /// <returns></returns>
         public ActionResult Login()
         {
-
-
             var model = new PersonalLoginPageModel();
             return View(model);
         }
@@ -94,7 +92,7 @@ namespace EventEgg.Admin.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return true;
+                return View(model);
             }
             return View(model);
         }

@@ -1,8 +1,9 @@
 using System;
+using EventEgg.Service.Interfaces;
 
 namespace EventEgg.Service.Models
 {
-    public class CityViewModel
+    public class CityViewModel : IViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

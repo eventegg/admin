@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using EventEgg.Service.Interfaces;
 
 namespace EventEgg.Service.Models
 {
-    public class ArticleViewModel
+    public class ArticleViewModel : IViewModel
     {
         public Guid Id { get; set; }
         public string Title { get; set; }
