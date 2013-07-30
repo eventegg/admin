@@ -10,15 +10,13 @@ namespace EventEgg.Admin.Library
 
         }
 
-        public static string RadioButtonList<T>(this IViewModelContainer<T> container, Expression<Func<T, object>> expression, IEnumerable<string> items) where T : class
+        public static string RadioButtonList(this HtmlHelper helper, string name, IEnumerable<string> items)
         {
-            var func = expression.Compile();
-            var result = func(container.ViewModel);
-            var selectList = new SelectList(items, result);
-            return container.RadioButtonList(expression, selectList);
+            var selectList = new SelectList(items);
+            return helper.RadioButtonList2(name, selectList);
         }
 
-        public static string RadioButtonList<T>(this IViewModelContainer<T> container, Expression<Func<T, object>> expression, IEnumerable<SelectListItem> items) where T : class
+        public static string RadioButtonList(this HtmlHelper helper, string name, IEnumerable<SelectListItem> items)
         {
             TagBuilder tableTag = new TagBuilder("table");
             tableTag.AddCssClass("radio-main");
@@ -27,8 +25,16 @@ namespace EventEgg.Admin.Library
             foreach (var item in items)
             {
                 var tdTag = new TagBuilder("td");
-                var radioTag = container.RadioButton(expression).Value(item.Value ?? item.Text).Checked(item.Selected).LabelAfter(item.Text);
-                tdTag.InnerHtml = radioTag.ToString();
+                var rbValue = item.Value ?? item.Text;
+                var rbName = name + "_" + rbValue;
+                var radioTag = helper.RadioButton(rbName, rbValue, item.Selected, new { name = name });
+
+                var labelTag = new TagBuilder("label");
+                labelTag.MergeAttribute("for", rbName);
+                labelTag.MergeAttribute("id", rbName + "_label");
+                labelTag.InnerHtml = rbValue;
+
+                tdTag.InnerHtml = radioTag.ToString() + labelTag.ToString();
 
                 trTag.InnerHtml += tdTag.ToString();
             }
