@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq.Expressions;
 using System.Web.Mvc;
+using System.Web.Mvc.Html;
 
 namespace EventEgg.Admin.Library
 {
@@ -14,10 +15,15 @@ namespace EventEgg.Admin.Library
 
         }
 
+        
+    }
+
+    public static class CommonExtensions
+    {
         public static string RadioButtonList(this HtmlHelper helper, string name, IEnumerable<string> items)
         {
             var selectList = new SelectList(items);
-            return helper.RadioButtonList2(name, selectList);
+            return helper.RadioButtonList(name, selectList);
         }
 
         public static string RadioButtonList(this HtmlHelper helper, string name, IEnumerable<SelectListItem> items)
