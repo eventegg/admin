@@ -14,6 +14,7 @@ namespace EventEgg.Admin.Controllers
         public ActionResult Index()
         {
             Response.Write("ömer başoğlu");
+            Console.WriteLine("vfgfgf");
             return View();
         }
     }
